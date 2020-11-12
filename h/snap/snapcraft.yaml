@@ -1,0 +1,18 @@
+name: h
+version: '1.0'
+summary: An Hello World Flutter App
+description: An Hello World Flutter App created during LAS!
+
+confinement: strict
+base: core18
+
+parts:
+  super-cool-app:
+    plugin: flutter
+    source: https://github.com/bittin/flutter-helloworld-snap
+    flutter-target: lib/main.dart
+
+apps:
+  h:
+    command: h
+    extensions: [flutter-dev]
